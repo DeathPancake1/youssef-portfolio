@@ -18,17 +18,36 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
   </head>
   <body>
-    <header>
+    <div class="page-1">
+      <header>
+        <nav class="navbar sticky-top">
+          <div class="container-fluid">
+            <a class="navbar-brand text-light" href="/"><i class="fas fa-code"></i></a>
+            <span class="navbar-text text-light">Home</span>
+            <span class="navbar-text text-light">Résumé</span>
+            <span class="navbar-text text-light">Project</span>
+            <span class="navbar-text text-light">Contact</span>
+          </div>
+        </nav>
+      </header>
 
-    </header>
-
-    <main>
-      <section class="">
-        <div class="container-fluid px-0">
-          
+      <main>
+        <div class="container">
+          <h2 class="text-secondary">Youssef Dawoud</h2>
+          <h1 class="text-black">Computer Engineer</h1>
+          <div class="svg-div">
+            <svg id="eqBRSJtUTuK1" 
+              xmlns="http://www.w3.org/2000/svg" 
+              xmlns:xlink="http://www.w3.org/1999/xlink" 
+              viewBox="0 0 1085 380" shape-rendering="geometricPrecision" 
+              text-rendering="geometricPrecision"><ellipse rx="536" ry="183.5" 
+              transform="translate(541 188.5)" fill="none" stroke="#bc0000" stroke-width="3"/>
+            </svg>
+          </div>
         </div>
-      </section>
-    </main>
+        <button type="button" class="btn btn-rounded text-light">Browse Projects <i class="fas fa-angle-down"></i></button>
+      </main>
+    </div>
 
     <footer>
 
@@ -37,3 +56,125 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
   </body>
 </html>
+<style>
+  html, body
+  {
+    padding: 0px;
+    margin: 0px;
+  }
+  .page-1{
+    background: linear-gradient(111.34deg, #000AFD 0%, #000461 0.01%, #500057 100%);
+    height: 100vh;
+  }
+  header{
+    padding-top: 10px;
+  }
+  nav{
+    margin: auto;
+    background-color: #3B29A8;
+    border: transparent 0px solid;
+    border-radius: 15px;
+    width: fit-content; 
+  }
+  .navbar-text{
+    font-family: Roboto;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+  }
+  .container{
+    position: relative;
+    margin: 0;
+    width: fit-content;
+    z-index: 3;
+  }
+  @media (min-width: 250px){
+    nav{
+      height: 20%;
+    }
+    .navbar{
+      padding-left: 1.5vw;
+      padding-right: 1.5vw;
+    }
+    .navbar-text{
+      font-size: 5vw;
+      margin-left: 2vw;
+    }
+    .container *{
+      padding-right: 5vw;
+      font-size: 8vw;
+      padding-left: 0;
+      z-index: 3;
+      position: relative;
+    }
+  }
+  @media (min-width: 992px){ 
+    nav{
+      height: 5%;
+    }
+    .navbar{
+      padding-left: 1vw;
+      padding-right: 1vw;
+    }
+    .navbar-text{
+      font-size: 1.8vw;
+      margin-left: 2.4vw;
+    }
+    .fa-code{
+      font-size: 2.5vw;
+      line-height: 2.5vw;
+    }
+    .container *{
+      padding-right: 250px;
+      font-size: 64px;
+      padding-left: 0;
+      z-index: 3;
+      position: relative;
+    }
+    .text-black{
+      font-size: 78px;
+      color: black;
+      font-weight: bolder;
+    }
+    svg{
+      max-width: 1200px;
+      max-height: 420px;
+    }
+    .btn{
+      left: 45%;
+      right: 40%;
+    }
+  }
+  .svg-div{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  svg {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    pointer-events: none;
+    animation: animateDash 3s linear forwards infinite;
+  }
+  @keyframes animateDash {
+    0% {
+      stroke-dashoffset: 3000;
+    }
+    100%{
+      stroke-dashoffset: 0;
+    }
+  }
+  .btn{
+    background-color: #3B29A8;
+    position: absolute;
+    bottom: 10px;
+  }
+  
+</style>
