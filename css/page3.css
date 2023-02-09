@@ -1,0 +1,9 @@
+.page-3{
+    height: 100vh;
+    background-color: black;
+    width: 100vw;
+}
+.page-3 embed{
+    height: 100vh;
+    width: 80vw;
+}
