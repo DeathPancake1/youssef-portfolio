@@ -1,0 +1,39 @@
+.page-2{
+    background-color: black;
+    background-image: url("../img/2126186.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+}
+.page-2 .layer{
+    background-color: rgba(26, 26, 26, 0.558);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    height: fit-content;
+}
+.page-2 .col{
+    padding-bottom: 12px;
+}
+@media (min-width: 250px){
+    .page-2 main{
+        padding-top: 25%;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 5%;
+    }
+}
+@media (min-width: 1200px){ 
+    .page-2 main{
+        padding-top: 6%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 2%;
+    }
+    .col{
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+}

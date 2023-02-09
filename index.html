@@ -16,17 +16,20 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
     />
     <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/page1.css" />
+    <link rel="stylesheet" href="css/page2.css" />
   </head>
   <body>
-    <div class="page-1">
+    <div class="page-1 page" id="page-1">
       <header>
         <nav class="navbar sticky-top">
           <div class="container-fluid">
-            <a class="navbar-brand text-light" href="/"><i class="fas fa-code"></i></a>
-            <span class="navbar-text text-light">Home</span>
-            <span class="navbar-text text-light">Résumé</span>
-            <span class="navbar-text text-light">Project</span>
-            <span class="navbar-text text-light">Contact</span>
+            <a class="navbar-brand text-light" href="#page-1"><i class="fas fa-code"></i></a>
+            <a class="navbar-text active" href="#page-1">Home</a>
+            <a class="navbar-text" href="#page-2">Projects</a>
+            <a class="navbar-text" href="#page-3">Résumé</a>
+            <a class="navbar-text">Contact</a>
           </div>
         </nav>
       </header>
@@ -45,8 +48,173 @@
             </svg>
           </div>
         </div>
-        <button type="button" class="btn btn-rounded text-light">Browse Projects <i class="fas fa-angle-down"></i></button>
+        <a href="#page-2" role="button" class="btn btn-rounded text-light">Browse Projects <i class="fas fa-angle-down"></i></a>
       </main>
+    </div>
+    <div class="page-2 page" id="page-2">
+      <div class="layer">
+      </div>
+      <main>
+        <div class="row row-cols-1 row-cols-xl-4 g-2">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Linux Shell</h5>
+                <h6 class="card-subtitle mb-2 text-muted">C - Lex - Yacc</h6>
+                <p class="card-text">An implementation of the linux terminal using C for executing commands and piplining, lex and yacc for parsing.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DeathPancake1/linux-terminal" class="card-link">Project link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Store Front API</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Web API - postgreSQL database - Typecript - Unit testing - node.js</h6>
+                <p class="card-text">A fuly functional back-end for a commercial store that uses postgreSQL, this includes API's for all necessary functions, login tokens and unit testing using jasmine.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DeathPancake1/store-api" class="card-link">Project link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Paint</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Java - Java swing</h6>
+                <p class="card-text">A Painting program includes popular shapes, ability to erase, undo and redo.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DeathPancake1/Paint" class="card-link">Project link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Image Processing Api</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Typecript - node.js</h6>
+                <p class="card-text">A web API to resize image into new dimentions with minimum loss of quality.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DeathPancake1/image-processing-api" class="card-link">Project link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">AWS-hosted fullstack application</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Amazon web services - CircleCI</h6>
+                <p class="card-text">A front and back-end website that is hosted on AWS, the database is postgre hosted on RDS, the front-end hosted on s3 bucket and the back-end hosted on elastic beanstalk. The program is pushed and built automatically using CircleCI
+                  <br>The program code was provided as part of a course and my assignment was to use AWS to host it and CircleCI to build it.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DeathPancake1/aws-fullstack" class="card-link">Project link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Sorting Algorithms</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Algorithm design - Python</h6>
+                <p class="card-text">An implementation of popular sorting Algorithms including Merge-sort, selection-sort, quick-sort and hybrid merge-selection-sort, Also an algorithm to find the kth smallest element in array. All using python
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DeathPancake1/sorting_algorithms" class="card-link">Project link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Dawoud App (Wordle remake)</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Flutter - Android Development</h6>
+                <p class="card-text">An Android application developed by me and published by Mohamed Wageh.<br> This is a word guessing game, where you guess a 5 letter word in 6 tries, after each try the game gives you clues about how close your guess was to the correct word. In the original game the word was chosen everyday, in this remake the word is choosen at random each time the user starts a new game. 
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DeathPancake1/wordle" class="card-link">Project link</a>
+                <a href="https://play.google.com/store/apps/details?id=com.dawordPac.daword" class="card-link">Playstore link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Car rental service full-stack website</h5>
+                <h6 class="card-subtitle mb-2 text-muted">MySQL - PHP - html - css - javascript - Ajax - Web API</h6>
+                <p class="card-text">A website for a car rental company, this was a group project and the backeend was made entirely by me. The back-end was made as modular as possible and easy to understand using POST API's for security and login validations. Complicated SQL commands were made avaialable to the user with 1 click.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DeathPancake1/red-black-trees-dictionary" class="card-link">Project link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Link integrety Checker</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Java - Multithreading</h6>
+                <p class="card-text">A java program to check integrety of sites before visiting them, it has customizable link depth and utilizes computer threads to reduce runtime.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DeathPancake1/Link-Integrety-Checker" class="card-link">Project link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Spell Checking</h5>
+                <h6 class="card-subtitle mb-2 text-muted">C - BST</h6>
+                <p class="card-text">A C program that implements Binary Search Trees and inputs all the english dictionary into BST, takes user sentences and checks each word in the tree.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DeathPancake1/Spell-Checking" class="card-link">Project link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Infix Evaluation</h5>
+                <h6 class="card-subtitle mb-2 text-muted">C</h6>
+                <p class="card-text">A C program that takes a mathematical calculation from the user, check correctnessm outputs the correct order of operations and executes it.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DeathPancake1/Infix-Evaluation" class="card-link">Project link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Red - Black trees dictionary</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Python - Red Black Trees</h6>
+                <p class="card-text">An implementation for red-black trees using python and dictionary is inserted to test the implementation.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DeathPancake1/red-black-trees-dictionary" class="card-link">Project link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="page-3 page" id="page-3">
+
     </div>
 
     <footer>
@@ -56,125 +224,4 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
   </body>
 </html>
-<style>
-  html, body
-  {
-    padding: 0px;
-    margin: 0px;
-  }
-  .page-1{
-    background: linear-gradient(111.34deg, #000AFD 0%, #000461 0.01%, #500057 100%);
-    height: 100vh;
-  }
-  header{
-    padding-top: 10px;
-  }
-  nav{
-    margin: auto;
-    background-color: #3B29A8;
-    border: transparent 0px solid;
-    border-radius: 15px;
-    width: fit-content; 
-  }
-  .navbar-text{
-    font-family: Roboto;
-  }
-  main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-  }
-  .container{
-    position: relative;
-    margin: 0;
-    width: fit-content;
-    z-index: 3;
-  }
-  @media (min-width: 250px){
-    nav{
-      height: 20%;
-    }
-    .navbar{
-      padding-left: 1.5vw;
-      padding-right: 1.5vw;
-    }
-    .navbar-text{
-      font-size: 5vw;
-      margin-left: 2vw;
-    }
-    .container *{
-      padding-right: 5vw;
-      font-size: 8vw;
-      padding-left: 0;
-      z-index: 3;
-      position: relative;
-    }
-  }
-  @media (min-width: 992px){ 
-    nav{
-      height: 5%;
-    }
-    .navbar{
-      padding-left: 1vw;
-      padding-right: 1vw;
-    }
-    .navbar-text{
-      font-size: 1.8vw;
-      margin-left: 2.4vw;
-    }
-    .fa-code{
-      font-size: 2.5vw;
-      line-height: 2.5vw;
-    }
-    .container *{
-      padding-right: 250px;
-      font-size: 64px;
-      padding-left: 0;
-      z-index: 3;
-      position: relative;
-    }
-    .text-black{
-      font-size: 78px;
-      color: black;
-      font-weight: bolder;
-    }
-    svg{
-      max-width: 1200px;
-      max-height: 420px;
-    }
-    .btn{
-      left: 45%;
-      right: 40%;
-    }
-  }
-  .svg-div{
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  svg {
-    stroke-dasharray: 300;
-    stroke-dashoffset: 300;
-    pointer-events: none;
-    animation: animateDash 3s linear forwards infinite;
-  }
-  @keyframes animateDash {
-    0% {
-      stroke-dashoffset: 3000;
-    }
-    100%{
-      stroke-dashoffset: 0;
-    }
-  }
-  .btn{
-    background-color: #3B29A8;
-    position: absolute;
-    bottom: 10px;
-  }
-  
-</style>
+<script type="text/javascript" src="js/index.js"></script>

@@ -1,0 +1,75 @@
+.page-1{
+    background: linear-gradient(111.34deg, #000AFD 0%, #000461 0.01%, #500057 100%); 
+}
+.page-1 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding-top: 5%;
+}
+.page-1 .container{
+    position: relative;
+    margin: 0;
+    width: fit-content;
+    z-index: 3;
+}
+@media (min-width: 250px){
+    .page-1 .container *{
+        padding-right: 5vw;
+        font-size: 8vw;
+        padding-left: 0;
+        z-index: 3;
+        position: relative;
+    }
+}
+@media (min-width: 992px){ 
+    .page-1 .text-black{
+        font-size: 78px!important;
+        color: black;
+        font-weight: bolder;
+    }
+    .page-1 .container *{
+        padding-right: 250px;
+        font-size: 64px;
+        padding-left: 0;
+        z-index: 3;
+        position: relative;
+    }
+    .page-1 svg{
+        max-width: 1200px;
+        max-height: 420px;
+    }
+    .page-1 .btn{
+        left: 45%;
+        right: 45%;
+    }
+}
+.page-1 .svg-div{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.page-1 svg {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    pointer-events: none;
+    animation: animateDash 3s linear forwards infinite;
+}
+@keyframes animateDash {
+    0% {
+      stroke-dashoffset: 3000;
+    }
+    100%{
+      stroke-dashoffset: 0;
+    }
+}
+.page-1 .btn{
+    background-color: #3B29A8;
+    position: absolute;
+    bottom: 10px;
+}
