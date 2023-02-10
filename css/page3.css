@@ -1,9 +1,28 @@
 .page-3{
-    height: 100vh;
-    background-color: black;
+    min-height: 100vh;
+    background: linear-gradient(111.34deg, #000AFD 0%, #000461 0.01%, #500057 100%);
     width: 100vw;
 }
-.page-3 embed{
-    height: 100vh;
-    width: 80vw;
+.page-3 .col{
+    padding-bottom: 12px;
+}
+@media (min-width: 250px){
+    .page-3 main{
+        padding-top: 25%;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 5%;
+    }
+}
+@media (min-width: 1200px){ 
+    .page-3 main{
+        padding-top: 6%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 2%;
+    }
+    .page-3 .col{
+        padding-right: 12px;
+        padding-left: 12px;
+    }
 }

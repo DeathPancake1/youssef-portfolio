@@ -1,21 +1,14 @@
 .page-2{
-    background-color: black;
-    background-image: url("../img/2126186.jpg");
+    background: linear-gradient(255.23deg, #500057 0%, #000461 99.99%, #000AFD 100%);
     background-repeat: no-repeat;
     background-size: cover;
     height: fit-content;
 }
-.page-2 .layer{
-    background-color: rgba(26, 26, 26, 0.558);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    height: fit-content;
-}
 .page-2 .col{
     padding-bottom: 12px;
+}
+.page-2 .card-border{
+    border: rgb(189, 0, 0) solid 3px;
 }
 @media (min-width: 250px){
     .page-2 main{
