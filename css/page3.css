@@ -6,6 +6,9 @@
 .page-3 .col{
     padding-bottom: 12px;
 }
+.page-3 .row{
+    margin: 0;
+}
 @media (min-width: 250px){
     .page-3 main{
         padding-top: 25%;
