@@ -1,5 +1,5 @@
 .page-1{
-    background: linear-gradient(111.34deg, #000AFD 0%, #000461 0.01%, #500057 100%); 
+    background: linear-gradient(92.74deg, #000461 2.3%, #500057 97.72%);
 }
 .page-1 main{
     display: flex;
@@ -68,8 +68,18 @@
       stroke-dashoffset: 0;
     }
 }
-.page-1 .btn{
+.page-1 .project{
     background-color: #3B29A8;
     position: absolute;
     bottom: 10px;
+}
+.page-1 .contact{
+    background-color: #131021;
+    position: absolute;
+    bottom: 55px;
+}
+.page-1 .download{
+    background-color: #241010;
+    position: absolute;
+    bottom: 100px;
 }
