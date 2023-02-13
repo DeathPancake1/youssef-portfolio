@@ -1,7 +1,13 @@
 .page-3{
     min-height: 100vh;
-    background: linear-gradient(92.74deg, #000461 2.3%, #500057 97.72%);
     width: 100vw;
+    background: linear-gradient(
+    to right,
+    #1C207B 0%,
+    #1C207B 40%,
+    #571A5C 40%,
+    #571A5C 100%
+  );
 }
 .page-3 .col{
     padding-bottom: 12px;
