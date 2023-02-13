@@ -87,14 +87,25 @@
 .page-1 .contact{
     background-color: #131021;
     position: absolute;
-    bottom: 55px;
+    bottom: 100px;
+}
+@media (min-width: 920px){ 
+    .page-1 .contact{
+        display: none;
+    }
 }
 .page-1 .download{
     background-color: #241010;
     position: absolute;
-    bottom: 100px;
+    bottom: 55px;
 }
 .page-1 .btn{
     width: max-content;
     margin: auto;
+    z-index: 2;
+    transition: transform .2s;
+}
+.page-1 .btn:hover{
+    z-index: 1024;
+    transform: scale(1.25);
 }

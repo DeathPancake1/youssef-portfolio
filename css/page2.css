@@ -10,6 +10,12 @@
 .page-2 .col{
     padding-bottom: 12px;
 }
+.page-2 .card{
+    transition: transform .2s;    
+}
+.page-2 .card:hover{
+    transform: scale(1.05);
+}
 .page-2 .card-border{
     border: rgb(189, 0, 0) solid 3px;
 }

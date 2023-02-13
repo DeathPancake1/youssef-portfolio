@@ -15,6 +15,12 @@
 .page-3 .row{
     margin: 0;
 }
+.page-3 .card{
+    transition: transform .2s;    
+}
+.page-3 .card:hover{
+    transform: scale(1.05);
+}
 @media (min-width: 250px){
     .page-3 main{
         padding-top: 25%;
