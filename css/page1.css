@@ -109,3 +109,6 @@
     z-index: 1024;
     transform: scale(1.25);
 }
+.page-1 p{
+    overflow-y: auto;
+}
