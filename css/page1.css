@@ -24,7 +24,7 @@
 }
 .page-1 .text-desc{
     font-size: 24px!important;
-    overflow:  scroll;
+    overflow:  hidden;
     padding-right: 0;
     color: rgb(200, 200, 200);
     padding-right: 0!important;
